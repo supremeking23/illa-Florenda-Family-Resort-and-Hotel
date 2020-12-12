@@ -414,7 +414,9 @@ html {
 	margin: 0 0 0 12px;
 }
 
-.section-header p {
+.section-header p,
+.section-header ul li,
+.section-header ol li {
 	color: #898989;
 	margin: 0 0 1.5em;
 	padding: 0;
@@ -505,3 +507,17 @@ html {
 /* .img-holder:hover.overlay {
 	opacity: 1;
 } */
+
+.about-banner {
+	background: url(../img/10.jpg);
+	height: 600px;
+	width: 100%;
+}
+.about-banner h2 {
+	color: #fff;
+	font: 1.86em/1em "Playball", sans-serif;
+}
+
+.grayish-background {
+	background: #f4f4f4;
+}
