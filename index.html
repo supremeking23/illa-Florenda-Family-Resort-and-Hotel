@@ -29,6 +29,8 @@
 
 		<link rel="stylesheet" href="styles/slick.css" />
 		<link rel="stylesheet" href="styles/slick-theme.css" />
+
+		<link rel="stylesheet" href="styles/ekko-lightbox.css" />
 		<link rel="stylesheet" href="styles/styles.css" />
 
 		<title>Villa Florenda Family Resort and Hotel</title>
@@ -482,31 +484,108 @@
 						</div>
 						<div class="multiple-items">
 							<div>
-								<img src="./img/b3.jpg" class="card-img-top" alt="..." />
+								<a
+									href="./img/single-bed.jpg"
+									data-toggle="lightbox"
+									data-gallery="example-gallery"
+									class="col-sm-4"
+								>
+									<img
+										class="card-img-top img-fluid"
+										src="./img/single-bed.jpg"
+								/></a>
 							</div>
 							<div>
-								<img src="./img/b3.jpg" class="card-img-top" alt="..." />
+								<a
+									href="./img/b3.jpg"
+									data-toggle="lightbox"
+									data-gallery="example-gallery"
+									class="col-sm-4"
+								>
+									<img class="card-img-top img-fluid" src="./img/b3.jpg"
+								/></a>
 							</div>
 							<div>
-								<img src="./img/b3.jpg" class="card-img-top" alt="..." />
+								<a
+									href="./img/b1.jpg"
+									data-toggle="lightbox"
+									data-gallery="example-gallery"
+									class="col-sm-4"
+								>
+									<img class="card-img-top img-fluid" src="./img/b1.jpg"
+								/></a>
 							</div>
 							<div>
-								<img src="./img/b3.jpg" class="card-img-top" alt="..." />
+								<a
+									href="./img/b2.jpg"
+									data-toggle="lightbox"
+									data-gallery="example-gallery"
+									class="col-sm-4"
+								>
+									<img class="card-img-top img-fluid" src="./img/b2.jpg"
+								/></a>
 							</div>
 							<div>
-								<img src="./img/b1.jpg" class="card-img-top" alt="..." />
+								<a
+									href="./img/b3.jpg"
+									data-toggle="lightbox"
+									data-gallery="example-gallery"
+									class="col-sm-4"
+								>
+									<img class="card-img-top img-fluid" src="./img/b3.jpg"
+								/></a>
 							</div>
 							<div>
-								<img src="./img/b1.jpg" class="card-img-top" alt="..." />
+								<a
+									href="./img/b4.jpg"
+									data-toggle="lightbox"
+									data-gallery="example-gallery"
+									class="col-sm-4"
+								>
+									<img class="card-img-top img-fluid" src="./img/b4.jpg"
+								/></a>
 							</div>
 							<div>
-								<img src="./img/b1.jpg" class="card-img-top" alt="..." />
+								<a
+									href="./img/single-bed.jpg"
+									data-toggle="lightbox"
+									data-gallery="example-gallery"
+									class="col-sm-4"
+								>
+									<img
+										class="card-img-top img-fluid"
+										src="./img/single-bed.jpg"
+								/></a>
 							</div>
 							<div>
-								<img src="./img/b1.jpg" class="card-img-top" alt="..." />
+								<a
+									href="./img/b3.jpg"
+									data-toggle="lightbox"
+									data-gallery="example-gallery"
+									class="col-sm-4"
+								>
+									<img class="card-img-top img-fluid" src="./img/b3.jpg"
+								/></a>
 							</div>
 							<div>
-								<img src="./img/b1.jpg" class="card-img-top" alt="..." />
+								<a
+									href="./img/b1.jpg"
+									data-toggle="lightbox"
+									data-gallery="example-gallery"
+									class="col-sm-4"
+								>
+									<img class="card-img-top img-fluid" src="./img/b1.jpg"
+								/></a>
+							</div>
+							<div>
+								<a
+									href="./img/b2.jpg"
+									data-toggle="lightbox"
+									data-gallery="example-gallery"
+									class="col-sm-4"
+								>
+									<img class="card-img-top img-fluid" src="./img/b2.jpg"
+								/></a>
 							</div>
 						</div>
 					</div>
@@ -539,11 +618,22 @@
 			crossorigin="anonymous"
 		></script>
 
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+			integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
+			crossorigin="anonymous"
+		></script>
+
 		<script src="./scripts/slick.min.js"></script>
 
 		<!-- <script src="./scripts/owl.carousel.min.js"></script> -->
 
 		<script>
+			$(document).on("click", '[data-toggle="lightbox"]', function (event) {
+				event.preventDefault();
+				$(this).ekkoLightbox();
+			});
+
 			$(".multiple-items").slick({
 				infinite: true,
 				slidesToShow: 5,

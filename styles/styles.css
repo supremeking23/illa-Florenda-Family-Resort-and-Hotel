@@ -521,3 +521,61 @@ html {
 .grayish-background {
 	background: #f4f4f4;
 }
+
+.gallery-banner {
+	background: url(../img/11.jpg);
+	height: 600px;
+	width: 100%;
+}
+
+.gallery-banner h2 {
+	color: #fff;
+	font: 1.86em/1em "Playball", sans-serif;
+}
+
+.grid {
+	background: transparent; /*ddd*/
+}
+
+/* clear fix */
+.grid:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+	width: 33.333%;
+}
+
+.grid-item {
+	float: left;
+}
+
+.grid-item img {
+	display: block;
+	max-width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+	.grid-sizer,
+	.grid-item {
+		width: 55.333%;
+	}
+}
+
+/* https://codepen.io/desandro/pen/MwJoLQ */
+
+.contact-banner {
+	background: url(../img/10.jpg);
+	height: 600px;
+	width: 100%;
+}
+
+.contact-banner h2 {
+	color: #fff;
+	font: 1.86em/1em "Playball", sans-serif;
+}
