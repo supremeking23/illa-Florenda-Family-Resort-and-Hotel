@@ -14,7 +14,7 @@ html {
 }
 
 .top-bar.dhomev {
-	background: #61b15a;
+	background: green;
 }
 
 .top-bar ul,
@@ -578,4 +578,19 @@ html {
 .contact-banner h2 {
 	color: #fff;
 	font: 1.86em/1em "Playball", sans-serif;
+}
+
+.table .thead-dark th {
+	color: #fff;
+	background-color: green;
+	border-color: green;
+}
+
+.card {
+	height: 600px;
+}
+
+.btn-success {
+	background-color: green;
+	border-color: green;
 }
