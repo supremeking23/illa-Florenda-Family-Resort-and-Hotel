@@ -67,7 +67,6 @@ html {
 
 .item-one {
 	background: url(../img/headone.jpg);
-	object-fit: contain;
 }
 
 .item-two {
