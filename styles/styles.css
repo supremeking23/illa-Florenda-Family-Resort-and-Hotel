@@ -66,14 +66,15 @@ html {
 }
 
 .item-one {
-	background: url(../img/10.jpg);
+	background: url(../img/headone.jpg);
+	object-fit: contain;
 }
 
 .item-two {
-	background: url(../img/11.jpg);
+	background: url(../img/headtwo.jpg);
 }
 .item-three {
-	background: url(../img/12.jpg);
+	background: url(../img/headthree.jpg);
 }
 
 .room-suit {
@@ -593,4 +594,9 @@ html {
 .btn-success {
 	background-color: green;
 	border-color: green;
+}
+
+.qoute-coloumn q {
+	color: #fff;
+	font: 1.86em/1em "Playball", sans-serif;
 }
